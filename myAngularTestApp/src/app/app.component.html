@@ -1,0 +1,17 @@
+
+<!-- <h2>{{title}}</h2> -->
+<!-- <app-databinding></app-databinding>
+<app-structural></app-structural> -->
+<!-- <app-pipe></app-pipe> -->
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link active" [routerLink]="['']" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]="['pipe']">Pipe</a>
+        <a class="nav-item nav-link" [routerLink]="['structural']">Structural</a>
+
+      </div>
+</nav>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+

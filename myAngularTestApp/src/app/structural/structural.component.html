@@ -1,0 +1,38 @@
+<h2>structural works!</h2>
+<h3>ngIF</h3>
+<input placeholder="enter number" type="number" [(ngModel)]="myNumber"/>
+<div *ngIf="myNumber!=undefined && myNumber%2==0">
+  Even Number
+</div>
+<div *ngIf="myNumber!=undefined && myNumber%2!=0">
+  Odd Number
+</div>
+<h2>ngSwich</h2>
+<input type="text" placeholder="Enter alphabet" [(ngModel)]="alphabet"/>
+<div [ngSwitch]="alphabet">
+  <div *ngSwitchCase="'a'">Volwel</div>
+  <div *ngSwitchCase="'e'">Volwel</div>
+  <div *ngSwitchCase="'i'">Volwel</div>
+  <div *ngSwitchCase="'o'">Volwel</div>
+  <div *ngSwitchCase="'u'">Volwel</div>
+  <div *ngSwitchDefault>Not Vowel</div>
+</div>
+<h2>NgFor</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>SrNo</th>
+      <th>Employee Name</th>
+      <th>Address</th>
+      <th>Contract Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of employee;let i=index">
+      <td>{{i+1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.Address}}</td>
+      <td>{{item.Contract}}</td>
+    </tr>
+  </tbody>
+</table>
