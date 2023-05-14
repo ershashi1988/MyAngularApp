@@ -5,9 +5,14 @@
 <!-- <app-pipe></app-pipe> -->
 <nav class="navbar navbar-expand navbar-light bg-light">
     <div class="nav navbar-nav">
-        <a class="nav-item nav-link active" [routerLink]="['']" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-        <a class="nav-item nav-link" [routerLink]="['pipe']">Pipe</a>
-        <a class="nav-item nav-link" [routerLink]="['structural']">Structural</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['']" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['pipe']">Pipe</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['structural']">Structural</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['parent']">Nested Component</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['inheritance']">Inheritance</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['templatedriven']">TemplateDriven</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['modeldriven']">Model Driven</a>
+        <a class="nav-item nav-link" routerLinkActive="Active" [routerLink]="['aboutus','5']">About Us</a>
 
       </div>
 </nav>
